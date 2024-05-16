@@ -1,6 +1,6 @@
 {
 	"name": "tsc-exclude",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Ignore unwanted type-checking errors",
 	"bin": "dist/index.js",
 	"scripts": {

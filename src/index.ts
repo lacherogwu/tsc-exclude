@@ -74,7 +74,7 @@ function buildFoundErrors(foundErrorsLines: string[]) {
 
 	let output = '';
 	if (finalPaths.length > 1) {
-		let output = `Found ${countErrors} errors in ${finalPaths.length} files.\n\nErrors  Files\n`;
+		output += `Found ${countErrors} errors in ${finalPaths.length} files.\n\nErrors  Files\n`;
 		output += finalPaths.map(item => item.text).join('\n');
 	} else {
 		const item = finalPaths[0]!;
