@@ -6,7 +6,15 @@ npm i -D tsc-exclude
 
 ## Usage
 
-Add you ignore patterns to `tsconfig.json` exclude field, and run
+Add your ignore patterns to `tsconfig.json` exclude field
+
+```json
+{
+	"exclude": ["../api/**", "../../node_modules/**"]
+}
+```
+
+Then pipe the output of `vue-tsc` to `tsc-exclude`
 
 ```bash
 vue-tsc --pretty | tsc-exclude
