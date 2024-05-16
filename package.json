@@ -1,0 +1,39 @@
+{
+	"name": "tsc-exclude",
+	"version": "0.0.1",
+	"description": "Ignore unwanted type-checking errors",
+	"bin": "dist/index.js",
+	"scripts": {
+		"dev": "tsx --watch src/index.ts",
+		"build": "rm -rf dist && tsup src/index.ts --format esm",
+		"build:watch": "rm -rf dist && tsup src/index.ts --watch --format esm"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"tsc",
+		"vue-tsc",
+		"tsc-exclude"
+	],
+	"author": "LacheRo",
+	"license": "MIT",
+	"type": "module",
+	"devDependencies": {
+		"@types/node": "^20.12.12",
+		"tsup": "^8.0.2",
+		"tsx": "^4.10.3",
+		"typescript": "^5.4.5"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lacherogwu/tsc-exclude"
+	},
+	"dependencies": {
+		"get-tsconfig": "^4.7.5",
+		"wildcard-match": "^5.1.3"
+	}
+}
